@@ -25,7 +25,7 @@ public class TodoController {
 
     @GetMapping("/todo/{datetime}")
     public List<Todo> getTodoByDatetime(@PathVariable String datetime) {
-        return todoService.getTodo(datetime);
+        return todoService.getTodo(datetime); // datetime은 String으로 처리됩니다.
     }
 
     @GetMapping("/todo/search")
