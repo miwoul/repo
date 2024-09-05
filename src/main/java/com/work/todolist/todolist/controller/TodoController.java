@@ -28,6 +28,11 @@ public class TodoController {
         return todoService.getTodo(datetime);
     }
 
+    @GetMapping("/todo/search")
+    public List<Todo> getTodoBySearch(@RequestParam String query) {
+        return todoService.searchTodo(query);
+    }
+
     @PutMapping("/update/todo/{id}")
     public Todo updateTodo(@PathVariable Long id, @RequestBody Todo todo) {
         todo.setId(id);
