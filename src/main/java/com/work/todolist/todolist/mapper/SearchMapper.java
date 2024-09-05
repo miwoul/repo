@@ -6,7 +6,7 @@ import org.apache.ibatis.annotations.Select;
 
 import java.util.List;
 
-@Mapper
+@Mapper //todo 제목, 내용 검색
 public interface SearchMapper {
     @Select("SELECT * FROM todo WHERE " +
             "title LIKE CONCAT('%', #{query}, '%') OR " +
