@@ -43,7 +43,7 @@ controller을 만들어 실제로 url을 사용하여 실 사용을 할 수있�
 <hr />
 
 ### 4. Api 명세 작성 필수 → Swagger 등 사용해도 무방함
- 1. todo작성
+ ##### 1. todo작성
 
 - **URL:** `POST /api/create/todo`
 - **Request Body:**
@@ -60,7 +60,7 @@ controller을 만들어 실제로 url을 사용하여 실 사용을 할 수있�
     ```
     
 
- 2. todo전체조회
+##### 2. todo전체조회
 
 - **URL:** `GET /api/all/todon`
 - **Response:**
@@ -79,7 +79,7 @@ controller을 만들어 실제로 url을 사용하여 실 사용을 할 수있�
     ```
     
 
- 3. todo 해당 날짜 할일 조회
+##### 3. todo 해당 날짜 할일 조회
 
 - **URL:** `GET /api/todo/{datetime}`
 - **Request Header:**
@@ -104,7 +104,7 @@ controller을 만들어 실제로 url을 사용하여 실 사용을 할 수있�
     ```
     
 
- 4. todo검색
+##### 4. todo검색
 
 - **URL:** `GET /api/todo/search?query=new`
 - **Response:**
@@ -123,7 +123,7 @@ controller을 만들어 실제로 url을 사용하여 실 사용을 할 수있�
     ```
     
 
- 5. todo수정
+##### 5. todo수정
 
 - **URL:** `PUT /api/update/todo/{id}`
 - **Request Body:**
@@ -140,7 +140,7 @@ controller을 만들어 실제로 url을 사용하여 실 사용을 할 수있�
     ```
     
 
- 6. todo완료 상태 수정
+##### 6. todo완료 상태 수정
 
 - **URL:** `PUT /api/update/todo/{id}/status`
 - **Request Header:**
@@ -150,6 +150,6 @@ controller을 만들어 실제로 url을 사용하여 실 사용을 할 수있�
     ```
     
 
- 7. todo삭제
+##### 7. todo삭제
 
 - **URL:** `DELETE /api/delete/todo/{id}`6. 기본 CRUD 업무 이외에 추가적인 업무 Api 필수 (Ex -> 일정 공유 기능)
