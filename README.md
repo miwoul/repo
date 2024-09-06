@@ -152,4 +152,4 @@ controller을 만들어 실제로 url을 사용하여 실 사용을 할 수있�
 
 #### 7. todo삭제
 
-- **URL:** `DELETE /api/delete/todo/{id}`6. 기본 CRUD 업무 이외에 추가적인 업무 Api 필수 (Ex -> 일정 공유 기능)
+- **URL:** `DELETE /api/delete/todo/{id}`
